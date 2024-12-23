@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Offer Ride</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/offerRide.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/nav.css" />
+    
+</head>
+<body>  
+    <!-- Navigation Bar -->
+    <div class="topnav" id="myTopnav" style="     padding-right: 4vw; padding-left: 4vw; padding-top: 2vh; ">
+        <a href="index.html">Home</a>
+        <a href="MyRides.html" >My Ride</a>
+        <a href="AllRides.html">All Rides</a>
+        <a href="OfferRide.html" class="active">Offer a Ride</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="index.html">Log Out</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+      <!-- <form class="search-form" style="margin-top: 11px" style="color: green">
+        <input type="Search" placeholder="Search">
+        <button>search</button>
+      </form> -->
+    </div>
+    <h3>Offer Ride Form</h3>
+    <! Form to Post a Ride.. >
+    <div class="container">
+      <form id='rideForm'>
+        <p id="rideError" style="color: red;"></p>
+        <label >Start Point</label>
+        <input type="text" id="startPoint" placeholder="Destination Starting Point">
+        <p id="eStartPoint" style="color: red;"></p>
+
+        <label >Stop Point</label>
+        <input type="text" id="stopPoint" placeholder="Destination Stopping Point">
+        <p id="eStopPoint" style="color: red;"></p>
+
+        <div class = "time">
+          <label >Departure Time: </label>
+          <input type="time" id="departureTime" placeholder="Destination Time">
+          <p id="eDepartureTime" style="color: red;"></p>
+        </div>
+         <div class="date">
+          <label >Departure Date: </label>
+        <input type="date" id="departureDate" placeholder="Destination Date">
+        <p id="eDepartureDate" style="color: red;"></p>
+         </div>
+   
+         <button type="submit" id="rideBtn" >Create Ride</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/offerRides.js"></script>
+</body>
+<div class="footer">
+  <footer>
+    <p>&copy; Copyright 2025 rideShareX</p>
+  </footer>
+</div>
+</html>
